@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Own Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Choose Your Own Adventure: The Mysterious Cave</h1>
+    </header>
+    <main>
+        <div id="story"></div>
+        <div id="choices"></div>
+        <div id="image"></div>
+    </main>
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+        <div id="addendum">
+            <h3>Addendum</h3>
+            <p>
+                For this assignment, I created a "Choose Your Own Adventure" game using HTML, CSS, and JavaScript. The main challenge was implementing the dynamic content changes based on user choices. Each story stage is represented by an object with text, choices, consequences, and an image. The most challenging part was ensuring that all story paths correctly updated the page content and images. This was solved by using event listeners on dynamically created buttons. Additionally, styling the page with CSS enhanced the user experience. This project improved my understanding of JavaScript's event handling and DOM manipulation, and I plan to apply these skills in future web development projects.
+            </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
